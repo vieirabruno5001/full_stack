@@ -53,8 +53,13 @@ body{
     padding-right: 6cm;
     padding-bottom: 70px;
 }
-.tabela{
-    align-content: center;
+table{
+    margin: 0 auto;
+    border: 3px dashed red;
+    margin-bottom: 3cm;   
+}
+th{
+    color: red;
 }
 .roda_pe{
     padding: 5px;

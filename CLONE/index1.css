@@ -1,11 +1,68 @@
+body{
+    background-color:  lightgray;
+}
 .topo{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
     border: solid 5px;
     border-color:rgb(0, 0, 105) ;
     background-color: bisque;
-    color:darkgreen
+    color:darkgreen;
+    font-size: 18pt;
+    
 }
-.cabeçalho{}
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+    align-items: center;
+    background-color:  lightskyblue;
+    color: darkblue;
+    padding-left: 10cm;
+    padding-right: 10cm;
+    font-size: 12pt;
+   
+}
+body{
+    text-align: center;
+}
+.texto{
+    text-align: center;
+    color:darkblue;
+    font-size: 14pt;
+}
+.livros{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4cm;
+    padding-right: 4cm;
+    padding-bottom: 70px;
+}
+.iframes{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6cm;
+    padding-right: 6cm;
+    padding-bottom: 70px;
+}
+.tabela{
+    align-content: center;
+}
+.roda_pe{
+    padding: 5px;
+    background-color: bisque;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    color: darkgreen;
+}

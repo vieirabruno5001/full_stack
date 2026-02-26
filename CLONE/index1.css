@@ -1,0 +1,11 @@
+.topo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 5px;
+    border-color:rgb(0, 0, 105) ;
+    background-color: bisque;
+    color:darkgreen
+}
+.cabeçalho{}

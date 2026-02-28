@@ -16,7 +16,7 @@ body{
 }
 .cabeçalho{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style-type: none;
     padding: 10px;
     align-items: center;
@@ -25,7 +25,6 @@ body{
     padding-left: 10cm;
     padding-right: 10cm;
     font-size: 12pt;
-   
 }
 body{
     text-align: center;
@@ -49,8 +48,8 @@ body{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    padding-left: 6cm;
-    padding-right: 6cm;
+    padding-left: 8cm;
+    padding-right: 8cm;
     padding-bottom: 70px;
 }
 table{

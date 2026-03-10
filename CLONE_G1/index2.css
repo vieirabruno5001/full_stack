@@ -1,0 +1,14 @@
+.cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px;
+    padding-right: 20cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: red;
+}
+.fixa{
+    position: fixed;
+}

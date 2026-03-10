@@ -12,3 +12,44 @@
 .fixa{
     position: fixed;
 }
+.propaganda{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 100px;
+} 
+body{
+    background-color: aliceblue;
+}
+.quadro{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+.relaçoes{
+    margin-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: white;
+    border: solid;
+    border-radius: 30px;
+    border-color: rgb(216, 216, 216);
+    padding-left: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto{
+    font-size: 20pt;
+    color: red;
+}
+.img1{
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: solid;
+    border-color: rgb(216, 216, 216);
+}
+.img2{
+     border-radius: 30px;
+    border: solid;
+    border-color: rgb(216, 216, 216);
+}

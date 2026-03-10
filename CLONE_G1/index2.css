@@ -10,6 +10,7 @@
     color: red;
 }
 .fixa{
+    margin-left: -7.5px;
     position: fixed;
 }
 .propaganda{
@@ -39,8 +40,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .texto{
-    font-size: 20pt;
-    color: red;
+    font-weight: 900;
+    font-size: 22pt;
+    color: rgb(197, 0, 0);
 }
 .img1{
     margin-bottom: 10px;

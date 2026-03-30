@@ -55,3 +55,21 @@ body{
     border: solid;
     border-color: rgb(216, 216, 216);
 }
+.g1{
+    color: blue;
+}
+.noticia{
+    display: flex;
+    align-items: start;
+}
+.foto1{
+    padding-right: 20px;
+    margin-left: 50px;
+}
+.boso{
+    border-radius: 20px;
+}
+hr{
+    margin-right: 5cm;
+    margin-left: 5cm;
+}

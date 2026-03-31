@@ -73,3 +73,25 @@ hr{
     margin-right: 5cm;
     margin-left: 5cm;
 }
+.g11{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(194, 0, 0);
+    color: aliceblue;
+}
+.buscar{
+    background-color: rgb(133, 2, 2);
+    margin-right: 5px;
+    padding-right: 30px;
+    
+}
+.entrar{
+    background-color: rgb(133, 2, 2);
+    border-radius: 40%;
+    margin-left: 5px;
+}
+.canto{
+    display: flex;
+    padding: 10px;
+}

@@ -80,20 +80,6 @@ ctx.arc(0,300,35,0*Math.PI,2*Math.PI);
 ctx.fill();
 ctx.closePath();
 
-// cachoeira1
-ctx.beginPath();
-ctx.fillStyle = 'blue';
-ctx.arc(0,300,35,0*Math.PI,2*Math.PI);
-ctx.fill();
-ctx.closePath();
-
-// cachoeira1
-ctx.beginPath();
-ctx.fillStyle = 'blue';
-ctx.arc(0,300,35,0*Math.PI,2*Math.PI);
-ctx.fill();
-ctx.closePath();
-
 // cachoeira2
 ctx.beginPath();
 ctx.fillStyle = 'blue';

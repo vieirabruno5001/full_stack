@@ -128,10 +128,31 @@ ctx1.arc(200,400,90,0*Math.PI,1.5*Math.PI);
 ctx1.stroke();
 ctx1.closePath();
 
-// meio arco direito 
+// meio arco
 ctx1.beginPath();
 ctx1.strokeStyle = 'green';
-ctx1.arc(200,400,70,1*Math.PI,*Math.PI);
+ctx1.arc(200,200,90,1*Math.PI,2*Math.PI);
+ctx1.stroke();
+ctx1.closePath();
+
+// terço arco1
+ctx1.beginPath();
+ctx1.strokeStyle = 'green';
+ctx1.arc(200,200,120,3*Math.PI,3.25*Math.PI);
+ctx1.stroke();
+ctx1.closePath();
+
+// terço arco2
+ctx1.beginPath();
+ctx1.strokeStyle = 'green';
+ctx1.arc(200,200,120,1.75*Math.PI,0*Math.PI);
+ctx1.stroke();
+ctx1.closePath();
+
+// terço arco2
+ctx1.beginPath();
+ctx1.strokeStyle = 'green';
+ctx1.arc(200,400,70,1.5*Math.PI,0*Math.PI);
 ctx1.stroke();
 ctx1.closePath();
 

@@ -203,7 +203,7 @@ ctx2.fillRect(210,150,50,50);
 ctx2.closePath();
 
 //telhado
-<<<<<<< Updated upstream
+
 ctx2.beginPath();
 ctx2.fillStyle = "orange";
 ctx2.moveTo(310,120);
@@ -212,16 +212,15 @@ ctx2.lineTo(70,120);
 ctx2.fill();
 ctx2.closePath();
 
-=======
-ctx.beginPath();
-ctx.fillStyle = "orange";
-ctx.moveTo(310,120);
-ctx.lineTo(190,30);
-ctx.lineTo(70,120);
-ctx.fill();
-ctx.closePath();
+
+ctx2.beginPath();
+ctx2.fillStyle = "orange";
+ctx2.moveTo(310,120);
+ctx2.lineTo(190,30);
+ctx2.lineTo(70,120);
+ctx2.fill();
+ctx2.closePath();
     
->>>>>>> Stashed changes
 // sol
 ctx2.beginPath();
 ctx2.fillStyle = 'yellow';
@@ -230,7 +229,6 @@ ctx2.fill();
 ctx2.closePath();
 
 // arvore1
-<<<<<<< Updated upstream
 ctx2.beginPath();
 ctx2.fillStyle = 'green';
 ctx2.arc(45,180,35,0*Math.PI,2*Math.PI);
@@ -271,47 +269,41 @@ ctx2.fillRect(0,365,150,50);
 ctx2.closePath();
 
 
-=======
-ctx.beginPath();
-ctx.fillStyle = 'green';
-ctx.arc(45,180,35,0*Math.PI,2*Math.PI);
-ctx.fill();
-ctx.closePath();
+ctx2.beginPath();
+ctx2.fillStyle = 'green';
+ctx2.arc(45,180,35,0*Math.PI,2*Math.PI);
+ctx2.fill();
+ctx2.closePath();
 
 // arvore2
-ctx.beginPath();
-ctx.fillStyle = 'green';
-ctx.arc(345,250,35,0*Math.PI,2*Math.PI);
-ctx.fill();
-ctx.closePath();
+ctx2.beginPath();
+ctx2.fillStyle = 'green';
+ctx2.arc(345,250,35,0*Math.PI,2*Math.PI);
+ctx2.fill();
+ctx2.closePath();
 
 // cachoeira1
-ctx.beginPath();
-ctx.fillStyle = 'blue';
-ctx.arc(0,300,35,0*Math.PI,2*Math.PI);
-ctx.fill();
-ctx.closePath();
+ctx2.beginPath();
+ctx2.fillStyle = 'blue';
+ctx2.arc(0,300,35,0*Math.PI,2*Math.PI);
+ctx2.fill();
+ctx2.closePath();
 
 // cachoeira2
-ctx.beginPath();
-ctx.fillStyle = 'blue';
-ctx.arc(150,400,35,0*Math.PI,2*Math.PI);
-ctx.fill();
-ctx.closePath();
+ctx2.beginPath();
+ctx2.fillStyle = 'blue';
+ctx2.arc(150,400,35,0*Math.PI,2*Math.PI);
+ctx2.fill();
+ctx2.closePath();
 
 //quadrado cachoeira1
-ctx.beginPath();
-ctx.fillStyle = "blue";
-ctx.fillRect(0,295,35,110);
-ctx.closePath();
+ctx2.beginPath();
+ctx2.fillStyle = "blue";
+ctx2.fillRect(0,295,35,110);
+ctx2.closePath();
 
 //quadrado cachoeira2
-ctx.beginPath();
-ctx.fillStyle = "blue";
-ctx.fillRect(0,365,150,50);
-ctx.closePath();
-
-
-let canvas1 = document.getElementById("canvas1");
-let ctx1 = canvas.getContext("2d");
->>>>>>> Stashed changes
+ctx2.beginPath();
+ctx2.fillStyle = "blue";
+ctx2.fillRect(0,365,150,50);
+ctx2.closePath();

@@ -1,4 +1,19 @@
 body{
-    background-color: antiquewhite;
+    background-color: rgb(226, 222, 217);
     align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 8cm;
+}
+#canvas{
+    background-color: rgb(114, 183, 185);
+    align-items: center;
+}
+a{
+    color: cadetblue;
+}
+a:hover{
+    color: brown;
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
 }

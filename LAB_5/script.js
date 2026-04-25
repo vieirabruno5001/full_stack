@@ -1,8 +1,9 @@
 const canvas1 = document.getElementById("canvas1");
 const ctx1 = canvas1.getContext("2d");
 
-ctx1.beginPath();
+
 //quadrado vermelho
+ctx1.beginPath();
 ctx1.fillStyle = "red";
 ctx1.fillRect(350, 0, 50, 50);
 

@@ -1,13 +1,15 @@
 body{
-    background-color: rgb(226, 222, 217);
+    background-color: rgba(10, 82, 1, 0.938);
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-top: 8cm;
+    padding-top: 4  cm;
 }
 #canvas{
     background-color: rgb(114, 183, 185);
     align-items: center;
+    background-image: url('Captura\ de\ tela\ 2026-04-24\ 221010.png');
+    background-size: cover;
 }
 a{
     color: cadetblue;
@@ -16,4 +18,9 @@ a:hover{
     color: brown;
     transform: translateY(-2px);
     transition: all 0.5s ease;
+}
+
+canvas{
+    background-image: url('Captura\ de\ tela\ 2026-04-24\ 221010.png');
+
 }

@@ -1,0 +1,97 @@
+.cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px;
+    padding-right: 20cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: red;
+}
+.fixa{
+    margin-left: -7.5px;
+    position: fixed;
+}
+.propaganda{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 100px;
+} 
+body{
+    background-color: aliceblue;
+}
+.quadro{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+.relaçoes{
+    margin-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: white;
+    border: solid;
+    border-radius: 30px;
+    border-color: rgb(216, 216, 216);
+    padding-left: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto{
+    font-weight: 900;
+    font-size: 22pt;
+    color: rgb(197, 0, 0);
+}
+.img1{
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: solid;
+    border-color: rgb(216, 216, 216);
+}
+.img2{
+     border-radius: 30px;
+    border: solid;
+    border-color: rgb(216, 216, 216);
+}
+.g1{
+    color: blue;
+}
+.noticia{
+    display: flex;
+    align-items: start;
+}
+.foto1{
+    padding-right: 20px;
+    margin-left: 50px;
+}
+.boso{
+    border-radius: 20px;
+}
+hr{
+    margin-right: 5cm;
+    margin-left: 5cm;
+}
+.g11{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(194, 0, 0);
+    color: aliceblue;
+}
+.buscar{
+    background-color: rgb(133, 2, 2);
+    margin-right: 5px;
+    padding-right: 30px;
+    
+}
+.entrar{
+    background-color: rgb(133, 2, 2);
+    border-radius: 40%;
+    margin-left: 5px;
+}
+.canto{
+    display: flex;
+    padding: 10px;
+}

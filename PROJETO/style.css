@@ -61,13 +61,13 @@ button {
     font-weight: bold;
     color: white;
 
+    /*tranforma o mouse em uma maozinha*/
     cursor: pointer;
-
-    transition: 0.3s;
 }
 
 button:hover {
     transform: scale(1.1);
+    transition: 0.4s;
 }
 
 canvas {
@@ -87,11 +87,8 @@ canvas {
 
 .bloco {
     background-color: #222;
-
     width: 400px;
-
     margin: auto;
     padding: 20px;
-
     border-radius: 15px;
 }

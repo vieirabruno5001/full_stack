@@ -10,6 +10,7 @@ class Player {
 
         this.speed = 5;
         this.dash = 12;
+        this.direction = "right";
 
         this.life = 100;
 
@@ -50,6 +51,16 @@ class Player {
 
         if (keys["d"] && this.x + this.width < canvas.width) {
             this.x += this.speed;
+        }
+
+        if (keys["a"]) {
+            this.x -= this.speed;
+            this.direction = "left";
+        }
+
+        if (keys["d"]) {
+            this.x += this.speed;
+            this.direction = "right";
         }
     }
 }

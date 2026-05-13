@@ -18,16 +18,7 @@ const particles = [];
 let score = 0;
 let gameOver = false;
 
-const stars = [];
 
-for (let i = 0; i < 100; i++) {
-
-    stars.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        size: Math.random() * 2
-    });
-}
 
 
 function spawnEnemy() {
@@ -48,12 +39,28 @@ setInterval(() => {
 
 function shoot() {
 
+    let bulletSpeed;
+    let bulletX;
+
+    if (player.direction === "right") {
+
+        bulletSpeed = 7;
+
+        bulletX = player.x + player.width;
+
+    } else {
+
+        bulletSpeed = -7;
+
+        bulletX = player.x;
+    }
+
     bullets.push({
-        x: player.x + player.width,
+        x: bulletX,
         y: player.y + player.height / 2,
         width: 18,
         height: 10,
-        speed: 7
+        speed: bulletSpeed
     });
 }
 
@@ -130,9 +137,11 @@ function updateBullets() {
         bullet.width = 30;
         bullet.height = 15;
 
-        if (bullet.x > canvas.width) {
-
-            bullets.splice(i, 1);
+        if (
+            bullet.x > canvas.width ||
+            bullet.x < 0
+        ) {
+           bullets.splice(i, 1);
 
             i--;
         }

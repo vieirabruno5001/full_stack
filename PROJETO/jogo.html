@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jogo.html">Jogo</a>
+        <a href="desenvolvedor.html">Desenvolvedor</a>
+    </nav>
+
+    <section class="container">
+
+        <h1>$VARELA RICH$</h1>
+
+        <p>WASD = movimentar</p>
+        <p>ESPAÇO = atirar</p>
+        <p>SHIFT = dash</p>
+        <p>R = reiniciar</p>
+
+        <button id="startBtn">Iniciar Jogo</button>
+
+        <canvas id="gameCanvas" width="1000" height="600"></canvas>
+
+    </section>
+
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

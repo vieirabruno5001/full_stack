@@ -9,7 +9,6 @@ const enemies = [];
 const bullets = [];
 const particles = [];
 
-let boss = null;
 
 let score = 0;
 let gameOver = false;
@@ -25,14 +24,6 @@ for (let i = 0; i < 100; i++) {
     });
 }
 
-function drawStars() {
-
-    ctx.fillStyle = "green";
-
-    for (const star of stars) {
-        ctx.fillRect(star.x, star.y, star.size, star.size);
-    }
-}
 
 function spawnEnemy() {
 
@@ -188,14 +179,6 @@ function updateEnemies() {
     }
 }
 
-function updateBoss() {
-
-    if (score >= 1000 && boss === null) {
-        boss = new Boss();
-    }
-
-   
-}
 
 function drawHUD() {
 
@@ -259,7 +242,7 @@ function update() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    drawStars();
+   
 
     player.move(keys, canvas);
 
@@ -268,8 +251,6 @@ function update() {
     updateBullets();
 
     updateEnemies();
-
-    updateBoss();
 
     updateParticles();
 

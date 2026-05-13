@@ -5,8 +5,8 @@ class Enemy {
         this.x = x;
         this.y = y;
 
-        this.width = 90;
-        this.height = 90;
+        this.width = 100;
+        this.height = 100;
 
         this.speed = 5;
         this.dash = 12;

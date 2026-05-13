@@ -67,7 +67,7 @@ button:hover {
 
 canvas {
     background-color: #222;
-
+    background-image: url('fundo.png');
     border: 4px solid darkgreen;
     border-radius: 15px;
 

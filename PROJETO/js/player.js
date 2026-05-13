@@ -30,7 +30,7 @@ class Player {
 
     move(keys, canvas) {
 
-        if (keys["shift"]) {
+        if (keys["m"]) {
             this.speed = this.dash;
         } else {
             this.speed = 5;

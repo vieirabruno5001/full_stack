@@ -4,5 +4,7 @@ startBtn.addEventListener("click", () => {
 
     startBtn.style.display = "none";
 
+    music.play();
+
     update();
 });

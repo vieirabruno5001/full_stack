@@ -1,5 +1,10 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
+const music = new Audio("music.mp3");
+
+music.loop = true;
+
+music.volume = 0.3;
 
 const keys = {};
 
@@ -222,7 +227,8 @@ function restartGame() {
     bullets.length = 0;
     particles.length = 0;
 
-    boss = null;
+    music.currentTime = 0;
+    music.play();
 
     score = 0;
 
@@ -257,6 +263,7 @@ function update() {
     drawHUD();
 
     if (player.life <= 0) {
+        music.pause();
         gameOver = true;
     }
 

@@ -60,8 +60,6 @@ button {
     font-size: 18px;
     font-weight: bold;
     color: white;
-
-    /*tranforma o mouse em uma maozinha*/
     cursor: pointer;
 }
 

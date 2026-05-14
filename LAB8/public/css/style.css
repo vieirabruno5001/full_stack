@@ -1,0 +1,36 @@
+body {
+
+    background-color: #dbeafe;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    font-family: Arial;
+}
+
+.container {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+input, button {
+
+    padding: 10px;
+}

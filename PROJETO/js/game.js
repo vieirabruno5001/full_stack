@@ -211,7 +211,7 @@ function drawHUD() {
 
 function drawGameOver() {
 
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "red";
     ctx.font = "50px Arial";
 
     ctx.fillText("GAME OVER", 330, 250);
@@ -298,3 +298,4 @@ window.addEventListener("keyup", (event) => {
 
     keys[event.key.toLowerCase()] = false;
 });
+

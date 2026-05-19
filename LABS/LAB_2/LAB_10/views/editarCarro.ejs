@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+    <h1>Editar Carro</h1>
+
+    <form action="/editar/<%= carro.id %>" method="POST">
+
+        <input name="marca" value="<%= carro.marca %>">
+
+        <br><br>
+
+        <input name="modelo" value="<%= carro.modelo %>">
+
+        <br><br>
+
+        <input name="ano" value="<%= carro.ano %>">
+
+        <br><br>
+
+        <input name="qtde" value="<%= carro.qtde_disponivel %>">
+
+        <br><br>
+
+        <button>
+
+            Atualizar
+
+        </button>
+
+    </form>
+</body>
+
+</html>

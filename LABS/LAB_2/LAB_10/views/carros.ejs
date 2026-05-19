@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+    <h1>Lista de Carros</h1>
+    <button>
+        <a href="/novoCarro">
+
+            Cadastrar carro
+
+        </a>
+    </button>
+    <table>
+
+        <tr>
+
+            <th>Marca</th>
+
+            <th>Modelo</th>
+
+            <th>Ano</th>
+
+            <th>Quantidade</th>
+
+            <th>Ações</th>
+
+        </tr>
+
+        <% carros.forEach(c=>{ %>
+
+            <tr>
+
+                <td>
+
+                    <%= c.marca %>
+
+                </td>
+
+                <td>
+
+                    <%= c.modelo %>
+
+                </td>
+
+                <td>
+
+                    <%= c.ano %>
+
+                </td>
+
+                <td>
+
+                    <% if( c.qtde_disponivel==0 ){ %>
+
+                        Esgotado
+
+                        <% } else { %>
+
+                            <%= c.qtde_disponivel %>
+
+                                <% } %>
+
+                </td>
+
+                <td>
+
+                    <a href="/vender/<%= c.id %>">
+
+                        Vender
+
+                    </a>
+
+                    <a href="/editar/<%= c.id %>">
+
+                        Editar
+
+                    </a>
+
+                    <a href="/deletar/<%= c.id %>">
+
+                        Remover
+
+                    </a>
+
+                </td>
+
+            </tr>
+
+            <% }) %>
+
+    </table>
+</body>
+
+</html>

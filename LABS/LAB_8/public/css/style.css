@@ -1,0 +1,43 @@
+body{
+
+background-color: lightblue;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+height: 100vh;
+
+margin: 0;
+
+}
+
+.container{
+
+background: white;
+
+padding: 30px;
+
+border-radius: 10px;
+
+text-align: center;
+
+}
+
+input{
+
+display: block;
+
+margin: 10px auto;
+
+padding: 10px;
+
+}
+
+button{
+
+padding: 10px;
+
+}

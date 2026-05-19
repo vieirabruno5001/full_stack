@@ -15,90 +15,90 @@ app.set("view engine", "ejs");
 let usuario = "";
 let senha = "";
 
-app.get("/", (req, res) => {
+// página inicial
+app.get("/", (req,res)=>{
 
-    res.sendFile(
-        path.join(
-            __dirname,
-            "public",
-            "Projects.html"
-        )
-    );
-
-});
-
-app.get("/cadastra", (req, res) => {
-
-    res.sendFile(
-        path.join(
-            __dirname,
-            "public",
-            "Cadastro.html"
-        )
-    );
+res.sendFile(
+path.join(
+__dirname,
+"public",
+"Projects.html"
+));
 
 });
 
-app.get("/login", (req, res) => {
+// abre cadastro
+app.get("/cadastra",(req,res)=>{
 
-    res.sendFile(
-        path.join(
-            __dirname,
-            "public",
-            "Login.html"
-        )
-    );
-
-});
-
-// CADASTRO
-app.post("/cadastro", (req,res)=>{
-
-    usuario = req.body.usuario;
-    senha = req.body.senha;
-
-    res.render(
-        "resposta",
-        {
-            status:
-            "Cadastro realizado"
-        }
-    );
+res.sendFile(
+path.join(
+__dirname,
+"public",
+"Cadastro.html"
+));
 
 });
 
-// LOGIN
+// abre login
+app.get("/login",(req,res)=>{
+
+res.sendFile(
+path.join(
+__dirname,
+"public",
+"Login.html"
+));
+
+});
+
+// salva cadastro
+app.post("/cadastro",(req,res)=>{
+
+usuario = req.body.usuario;
+senha = req.body.senha;
+
+res.render(
+"resposta",
+{
+status:
+"Cadastro realizado"
+}
+);
+
+});
+
+// verifica login
 app.post("/entrar",(req,res)=>{
 
-    if(
-        req.body.usuario === usuario &&
-        req.body.senha === senha
-    ){
+if(
+req.body.usuario === usuario &&
+req.body.senha === senha
+){
 
-        res.render(
-            "resposta",
-            {
-                status:
-                "Login correto"
-            }
-        );
+res.render(
+"resposta",
+{
+status:
+"Login realizado"
+}
+);
 
-    }
-    else{
+}
+else{
 
-        res.render(
-            "resposta",
-            {
-                status:
-                "Login incorreto"
-            }
-        );
+res.render(
+"resposta",
+{
+status:
+"Login incorreto"
+}
+);
 
-    }
+}
 
 });
 
-app.listen(80, ()=>{
+app.listen(80,()=>{
 
 console.log(
 "Servidor funcionando"

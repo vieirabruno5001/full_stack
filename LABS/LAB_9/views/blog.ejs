@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <h1>Blog</h1>
+
+    <a href="/cadastrar_post">
+
+        <button>
+            Criar Post
+        </button>
+
+    </a>
+
+    <br><br>
+
+    <% posts.forEach(post=> { %>
+
+        <div class="card">
+
+            <h2>
+
+                <%= post.titulo %>
+
+            </h2>
+
+            <h4>
+
+                <%= post.resumo %>
+
+            </h4>
+
+            <p>
+
+                <%= post.conteudo %>
+
+            </p>
+
+        </div>
+
+        <br>
+
+        <% }) %>
+
+</body>
+
+</html>

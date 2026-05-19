@@ -1,66 +1,107 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static("public"));
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set("view engine", "ejs");
 
-let usuarioCadastrado = {
-    email: '',
-    senha: ''
-};
+let usuario = "";
+let senha = "";
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'Projects.html'));
+app.get("/", (req, res) => {
+
+    res.sendFile(
+        path.join(
+            __dirname,
+            "public",
+            "Projects.html"
+        )
+    );
+
 });
 
-app.get('/cadastra', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'Cadastro.html'));
+app.get("/cadastra", (req, res) => {
+
+    res.sendFile(
+        path.join(
+            __dirname,
+            "public",
+            "Cadastro.html"
+        )
+    );
+
 });
 
-app.post('/cadastra', (req, res) => {
+app.get("/login", (req, res) => {
 
-    usuarioCadastrado.email = req.body.email;
-    usuarioCadastrado.senha = req.body.senha;
+    res.sendFile(
+        path.join(
+            __dirname,
+            "public",
+            "Login.html"
+        )
+    );
 
-    res.render('resposta', {
-        mensagem: 'Usuário cadastrado com sucesso!'
-    });
 });
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'Login.html'));
+// CADASTRO
+app.post("/cadastro", (req,res)=>{
+
+    usuario = req.body.usuario;
+    senha = req.body.senha;
+
+    res.render(
+        "resposta",
+        {
+            status:
+            "Cadastro realizado"
+        }
+    );
+
 });
 
-app.post('/login', (req, res) => {
+// LOGIN
+app.post("/entrar",(req,res)=>{
 
-    const email = req.body.email;
-    const senha = req.body.senha;
+    if(
+        req.body.usuario === usuario &&
+        req.body.senha === senha
+    ){
 
-    if (
-        email === usuarioCadastrado.email &&
-        senha === usuarioCadastrado.senha
-    ) {
-
-        res.render('resposta', {
-            mensagem: 'Login realizado com sucesso!'
-        });
-
-    } else {
-
-        res.render('resposta', {
-            mensagem: 'Email ou senha incorretos!'
-        });
+        res.render(
+            "resposta",
+            {
+                status:
+                "Login correto"
+            }
+        );
 
     }
+    else{
+
+        res.render(
+            "resposta",
+            {
+                status:
+                "Login incorreto"
+            }
+        );
+
+    }
+
 });
 
-app.listen(80, () => {
-    console.log('Servidor rodando na porta 80');
+app.listen(80, ()=>{
+
+console.log(
+"Servidor funcionando"
+);
+
 });

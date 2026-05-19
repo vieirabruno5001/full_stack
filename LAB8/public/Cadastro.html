@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Cadastro</title>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
     <div class="container">
 
         <h1>Cadastro</h1>
 
-        <form action="/cadastra" method="POST">
+        <form action="/cadastro" method="POST">
 
-            <input type="email" name="email" placeholder="Digite o email" required>
+            <input type="text" name="usuario" placeholder="Usuario" required>
 
-            <input type="password" name="senha" placeholder="Digite a senha" required>
+            <input type="password" name="senha" placeholder="Senha" required>
 
             <button type="submit">
                 Cadastrar
@@ -22,9 +27,8 @@
 
         </form>
 
-        <a href="/login">Ir para Login</a>
-
     </div>
 
 </body>
+
 </html>
